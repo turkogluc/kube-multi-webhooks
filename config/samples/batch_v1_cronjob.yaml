@@ -1,0 +1,13 @@
+apiVersion: batch.tutorial.kubebuilder.io/v1
+kind: CronJob
+metadata:
+  labels:
+    app.kubernetes.io/name: cronjob
+    app.kubernetes.io/instance: cronjob-sample
+    app.kubernetes.io/part-of: kube-defaulter
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kube-defaulter
+  name: cronjob-sample
+spec:
+  foo: test24
+  # TODO(user): Add fields here
